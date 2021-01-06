@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+}
+
+#special-body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  overflow-y: scroll;
+}
+
+.welcome {
+  top: 0;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/toile2020gde.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+}
+.welcome__alice {
+  font-size: 5em;
+  background-color: #000000;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: block;
+}
+
+.zoom {
+  animation: scale 40s linear infinite;
+}
+
+@keyframes scale {
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.page-debut {
+  position: fixed;
+  top: 50%;
+  left: 3vw;
+  transform: translate(-50%, -50%);
+}
+.page-debut__heading {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-left: 2%;
+  background-color: #000000;
+  color: #fff;
+  font-size: 3em;
+  margin: 5px;
+  max-width: 110px;
+  padding: 5px;
+}
+
+.header {
+  border: solid;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+}
+.header__larmes {
+  margin-right: 10vw;
+}
+.header__larmes__yeux {
+  width: 250px;
+  margin: 5%;
+}
+.header__nav {
+  display: flex;
+  flex: auto;
+}
+.header__nav--ul {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  margin-left: 20%;
+  padding: 2px;
+}
+.header__nav__link {
+  flex: auto;
+  display: block;
+  margin: auto;
+  padding: 2px;
+}
+
+.grid {
+  z-index: -2;
+}
+
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 97%;
+}
+
+/*# sourceMappingURL=style.css.map */
