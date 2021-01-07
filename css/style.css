@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-sizing: border-box;
@@ -17,7 +15,6 @@
 body {
   font: 100% Helvetica, sans-serif;
   color: #333;
-  overflow-y: scroll;
 }
 
 .welcome {
@@ -80,7 +77,7 @@ body {
 }
 
 .header {
-  border: solid;
+  border-bottom: solid;
   display: flex;
   flex-direction: row-reverse;
   width: 100vw;
@@ -90,7 +87,7 @@ body {
   margin-right: 10vw;
 }
 .header__larmes__yeux {
-  width: 250px;
+  height: 14vh;
   margin: 5%;
 }
 .header__nav {
@@ -111,6 +108,11 @@ body {
   padding: 2px;
 }
 
+#body-paint {
+  width: 95%;
+  margin: auto;
+}
+
 .grid:after {
   content: "";
   display: block;
@@ -122,7 +124,7 @@ body {
 .grid-item {
   z-index: -1;
   width: 50%;
-  margin-bottom: 3vw;
+  margin-bottom: 1.5%;
 }
 
 .grid-item--width2 {
@@ -130,7 +132,7 @@ body {
 }
 
 .grid-item--width3 {
-  width: 40%;
+  width: 32.5%;
 }
 
 .grid-item--row {
@@ -145,6 +147,86 @@ body {
 .grid-item img {
   display: block;
   max-width: 97%;
+}
+
+.container {
+  overflow-y: scroll;
+  display: flex;
+  margin-top: 3vh;
+}
+
+.presentation {
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+}
+.presentation__title {
+  margin-top: 3vh;
+  font-weight: bold;
+  font-size: 2em;
+}
+.presentation__text {
+  margin-top: 3vh;
+  font-size: 1em;
+}
+
+.footer {
+  margin-top: 3vh;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer__img--logo {
+  width: 40px;
+}
+
+.project {
+  overflow-y: hidden;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project__list {
+  margin-top: 20%;
+  height: 100vh;
+}
+.project__list__element {
+  margin-top: 1vh;
+}
+.project__img {
+  margin-top: 5vh;
+}
+.project__img--sizer {
+  width: 40vw;
+}
+
+.demos__proj {
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100vh;
+}
+.demos__proj__title {
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.demos__proj__bloc {
+  display: flex;
+  flex-direction: row;
+}
+.demos__proj__bloc__text {
+  width: 30vw;
+}
+.demos__proj__bloc__illubloc {
+  width: 50vw;
+}
+.demos__proj__bloc__illubloc--img {
+  width: 20vw;
 }
 
 /*# sourceMappingURL=style.css.map */

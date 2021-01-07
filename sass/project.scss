@@ -1,0 +1,128 @@
+$font-stack:Helvetica, sans-serif;
+$name-color: #fff;
+
+body {
+  overflow-y: hidden;
+  font: 100% $font-stack;
+  box-sizing: border-box;
+}
+
+.page-debut {
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  left: 3vw;
+  transform: translate(-50%, -50%);
+
+  &__heading{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-left: 2%;
+    background-color: #000000;
+    color : $name-color;
+    font-size: 3em;
+    margin: 5px;
+    max-width: 110px;
+    padding: 5px;
+  }
+}
+
+.header{
+  border-bottom:  solid;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+  height: 15vh;
+  &__larmes{
+    margin-right: 10vw;
+    &__yeux{
+      height: 14vh;
+      margin: 5%;
+    }
+  }
+  &__nav{
+    display: flex;
+    flex:auto;
+    &--ul {
+      display: flex;
+      flex:auto;
+      flex-direction: row;
+      margin-left: 20%;
+      padding: 2px;
+    }
+
+    &__link{
+      flex: auto;
+
+      display: block;
+      margin:auto;
+      padding: 2px;
+
+    }
+  }
+}
+
+//WALL
+.project{
+  height:80vh;
+  width:80%;
+  margin:auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__list{
+    margin-top: 20%;
+    height:100vh;
+    &__element{
+      margin-top: 1vh;
+    }
+
+  }
+  &__img{
+    margin-top: 5vh;
+    &--sizer{
+      width:40vw;
+    }
+  }
+}
+
+#quit{
+  transform: rotate(90deg);
+  margin-top :3vh;
+  margin-left: -5vw;;
+  position: absolute;
+  font-size: 3em;
+  background-color: #000000;
+  color: white;
+  display: block;
+
+}
+
+.demos__proj{
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  height: 100vh;
+  overflow-y: scroll;
+
+   &__title{
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    width:100%;
+  }
+  &__bloc{
+    display: flex;
+    flex-direction: row;
+   &__text{
+    width:40vw;
+  }
+   &__illubloc{
+    width:50vw;
+     &--img{
+      width: 40vw;
+    }
+  }
+}
+}

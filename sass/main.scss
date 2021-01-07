@@ -4,8 +4,6 @@ $name-color: #fff;
 
 
 *{
-    margin: 0;
-    padding: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-sizing: border-box;
@@ -23,7 +21,6 @@ body {
   font: 100% $font-stack;
   color:$primary-color;
 
-  overflow-y: scroll;
 }
 
 .welcome {
@@ -93,7 +90,7 @@ body {
 }
 
 .header{
-  border: solid;
+  border-bottom:  solid;
   display: flex;
   flex-direction: row-reverse;
   width: 100vw;
@@ -101,7 +98,7 @@ body {
   &__larmes{
     margin-right: 10vw;
     &__yeux{
-      width: 250px;
+      height: 14vh;
       margin: 5%;
     }
   }
@@ -130,7 +127,10 @@ body {
 
 
  // PEINTURE
-
+#body-paint{
+  width:95%;
+  margin:auto;
+}
  .grid:after {
    content: '';
    display: block;
@@ -143,11 +143,14 @@ body {
  .grid-item {
    z-index: -1;
    width: 50%;
-   margin-bottom: 3vw;
+   margin-bottom: 1.5%;
 
  }
 .grid-item--width2 { width: 101%; }
-.grid-item--width3 { width: 40%; }
+.grid-item--width3 {
+  width: 32.5%;
+
+ }
 .grid-item--row {
   display: flex;
   flex:auto;
@@ -160,3 +163,94 @@ body {
    display: block;
    max-width: 97%;
  }
+
+
+ // wall
+ .container{
+   overflow-y: scroll;
+   display: flex;
+   margin-top: 3vh;
+ }
+
+ .presentation{
+   margin-right: auto;
+   margin-left: auto;
+   width:60%;
+   &__title{
+        margin-top: 3vh;
+     font-weight: bold;
+     font-size:2em;
+   }
+   &__text{
+    margin-top: 3vh;
+     font-size:1em;
+   }
+ }
+
+ .footer {
+   margin-top: 3vh;
+   width :60%;
+   margin-left :auto;
+   margin-right: auto;
+
+   &__img{
+     &--logo{
+       width:40px;
+     }
+   }
+
+ }
+
+ //Code
+
+ .project{
+   overflow-y: hidden;
+   width:80%;
+   margin:auto;
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+   &__list{
+     margin-top: 20%;
+     height:100vh;
+     &__element{
+       margin-top: 1vh;
+     }
+
+   }
+   &__img{
+     margin-top: 5vh;
+     &--sizer{
+       width:40vw;
+     }
+   }
+ }
+
+ .demos__proj{
+   overflow-y: hidden;
+   margin-left: auto;
+   margin-right: auto;
+   width:80%;
+   height: 100vh;
+
+    &__title{
+     font-size: 2em;
+     background-color: black;
+     color: white;
+     width:100%;
+   }
+   &__bloc{
+     display: flex;
+     flex-direction: row;
+    &__text{
+     width:30vw;
+   }
+    &__illubloc{
+     width:50vw;
+      &--img{
+       width: 20vw;
+     }
+   }
+ }
+}
