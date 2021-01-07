@@ -73,6 +73,7 @@ body {
 
 
 .page-debut {
+  z-index: 100;
   position: fixed;
   top: 50%;
   left: 3vw;
@@ -96,6 +97,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   width: 100vw;
+  height: 15vh;
   &__larmes{
     margin-right: 10vw;
     &__yeux{
@@ -128,10 +130,7 @@ body {
 
 
  // PEINTURE
- .grid{
-   z-index: -2;
 
- }
  .grid:after {
    content: '';
    display: block;
@@ -142,11 +141,19 @@ body {
 
  .grid-sizer,
  .grid-item {
-   width: 33.333%;
- }
+   z-index: -1;
+   width: 50%;
+   margin-bottom: 3vw;
 
+ }
+.grid-item--width2 { width: 101%; }
+.grid-item--width3 { width: 40%; }
+.grid-item--row {
+  display: flex;
+  flex:auto;
+}
  .grid-item {
-   float: left;
+   float: right;
  }
 
  .grid-item img {

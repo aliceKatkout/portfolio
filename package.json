@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/aliceKatkout/portfolio/issues"
   },
-  "homepage": "https://github.com/aliceKatkout/portfolio#readme"
+  "homepage": "https://github.com/aliceKatkout/portfolio#readme",
+  "dependencies": {
+    "masonry-layout": "^4.2.2"
+  }
 }

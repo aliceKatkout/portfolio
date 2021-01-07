@@ -31,6 +31,8 @@ start.addEventListener("mouseover", function(event) {
   animate1();
 });
 
+
+  // options
 // let paint = document.getElementById("peinture");
 //
 //
