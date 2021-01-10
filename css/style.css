@@ -1,20 +1,30 @@
+@font-face {
+  font-family: "fake_receiptregular";
+  src: url("../polices/fake_receipt-webfont.woff2") format("woff2"), url("../polices/fake_receipt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "minecraftiaregular";
+  src: url("../polices/minecraftia-regular-webfont.woff2") format("woff2"), url("../polices/minecraftia-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-sizing: border-box;
 }
 
-#special-body {
-  font: 100% Helvetica, sans-serif;
+body {
+  font-family: source-sans-pro, Helvetica, sans-serif;
+}
+
+#special-body-accueil {
   color: #333;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-}
-
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #333;
 }
 
 .welcome {
@@ -25,7 +35,6 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/toile2020gde.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +42,7 @@ body {
   display: block;
 }
 .welcome__alice {
+  font-family: "minecraftiaregular";
   font-size: 5em;
   background-color: #000000;
   position: absolute;
@@ -76,38 +86,6 @@ body {
   padding: 5px;
 }
 
-.header {
-  border-bottom: solid;
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100vw;
-  height: 15vh;
-}
-.header__larmes {
-  margin-right: 10vw;
-}
-.header__larmes__yeux {
-  height: 14vh;
-  margin: 5%;
-}
-.header__nav {
-  display: flex;
-  flex: auto;
-}
-.header__nav--ul {
-  display: flex;
-  flex: auto;
-  flex-direction: row;
-  margin-left: 20%;
-  padding: 2px;
-}
-.header__nav__link {
-  flex: auto;
-  display: block;
-  margin: auto;
-  padding: 2px;
-}
-
 #body-paint {
   width: 95%;
   margin: auto;
@@ -149,6 +127,15 @@ body {
   max-width: 97%;
 }
 
+b {
+  color: pink;
+  font-size: 1.5em;
+}
+
+.mot-link {
+  font-weight: bold;
+}
+
 .container {
   overflow-y: scroll;
   display: flex;
@@ -178,55 +165,6 @@ body {
 }
 .footer__img--logo {
   width: 40px;
-}
-
-.project {
-  overflow-y: hidden;
-  width: 80%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.project__list {
-  margin-top: 20%;
-  height: 100vh;
-}
-.project__list__element {
-  margin-top: 1vh;
-}
-.project__img {
-  margin-top: 5vh;
-}
-.project__img--sizer {
-  width: 40vw;
-}
-
-.demos__proj {
-  overflow-y: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 100vh;
-}
-.demos__proj__title {
-  font-size: 2em;
-  background-color: black;
-  color: white;
-  width: 100%;
-}
-.demos__proj__bloc {
-  display: flex;
-  flex-direction: row;
-}
-.demos__proj__bloc__text {
-  width: 30vw;
-}
-.demos__proj__bloc__illubloc {
-  width: 50vw;
-}
-.demos__proj__bloc__illubloc--img {
-  width: 20vw;
 }
 
 /*# sourceMappingURL=style.css.map */

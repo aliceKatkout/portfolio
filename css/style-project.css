@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "minecraftiaregular";
+  src: url("../polices/minecraftia-regular-webfont.woff2") format("woff2"), url("../polices/minecraftia-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   overflow-y: hidden;
-  font: 100% Helvetica, sans-serif;
+  font-family: source-sans-pro, Helvetica, sans-serif;
   box-sizing: border-box;
 }
 
@@ -23,40 +29,8 @@ body {
   padding: 5px;
 }
 
-.header {
-  border-bottom: solid;
-  display: flex;
-  flex-direction: row-reverse;
-  width: 100vw;
-  height: 15vh;
-}
-.header__larmes {
-  margin-right: 10vw;
-}
-.header__larmes__yeux {
-  height: 14vh;
-  margin: 5%;
-}
-.header__nav {
-  display: flex;
-  flex: auto;
-}
-.header__nav--ul {
-  display: flex;
-  flex: auto;
-  flex-direction: row;
-  margin-left: 20%;
-  padding: 2px;
-}
-.header__nav__link {
-  flex: auto;
-  display: block;
-  margin: auto;
-  padding: 2px;
-}
-
 .project {
-  height: 80vh;
+  height: 100vh;
   width: 80%;
   margin: auto;
   display: flex;
@@ -64,6 +38,7 @@ body {
   justify-content: space-between;
 }
 .project__list {
+  width: 40vw;
   margin-top: 20%;
   height: 100vh;
 }
@@ -75,6 +50,10 @@ body {
 }
 .project__img--sizer {
   width: 40vw;
+}
+
+.project__list__element:hover {
+  transform: scale(1.1, 1.1);
 }
 
 #quit {

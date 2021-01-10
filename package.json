@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/aliceKatkout/portfolio#readme",
   "dependencies": {
-    "masonry-layout": "^4.2.2"
+    "masonry-layout": "^4.2.2",
+    "swup": "^2.0.14"
   }
 }
