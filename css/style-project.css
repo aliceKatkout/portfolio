@@ -4,6 +4,14 @@
   font-weight: normal;
   font-style: normal;
 }
+.wipe-transition {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, #a5a5df, midnightblue);
+  position: absolute;
+  left: -100%;
+}
+
 body {
   overflow-y: hidden;
   font-family: source-sans-pro, Helvetica, sans-serif;

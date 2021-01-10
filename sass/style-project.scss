@@ -7,6 +7,14 @@
 
 }
 
+.wipe-transition {
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(90deg, rgb(165, 165, 223),midnightblue) ;
+    position: absolute;
+    left: -100%;
+}
+
 $font-stack: source-sans-pro, Helvetica, sans-serif;
 $name-color: #fff;
 
