@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
   <meta charset="utf-8">
   <link href="./css/style-project.css" rel="stylesheet">
   <link href="./css/style-header.css" rel="stylesheet">
   <style>
-    @import url("https://use.typekit.net/leu0xrz.css");
+  @import url("https://use.typekit.net/leu0xrz.css");
   </style>
 
   <title>Alice Vedrenne</title>
-  </head>
-  <body>
+</head>
+<body>
   <div class="page-debut">
     <a href="./index.html"><p class="page-debut__heading">Coucou</p></a>
   </div>
@@ -50,10 +50,39 @@
         <p class="demos__proj__bloc__text">Ce jeu vidéo a été réalisé via PICO-8, en collaboration avec Salma El-Mourabet et Joanna Dias.
           Il est jouable en ligne. Le but est de traverser toutes les salles.</p>
           <div class="demos__proj__bloc__illubloc">
-            <img class="demos__proj__bloc__illubloc--img" src="./images/code/pico2.png" />
-            <img class="demos__proj__bloc__illubloc--img" src="./images/code/pico3.png" />
-            <img class="demos__proj__bloc__illubloc--img" src="./images/code/pico4.png" />
-            <img class="demos__proj__bloc__illubloc--img" src="./images/code/pico5.png" />
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <img src="./images/code/pico2.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="./images/code/pico3.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="./images/code/pico4.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="./images/code/pico5.png" style="width:100%">
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
           </div>
         </div>
       </div>
@@ -74,19 +103,19 @@
         <h3 class="demos__proj__title">Epilepsy Machine</h3>
         <div class="demos__proj__bloc">
           <p class="demos__proj__bloc__text">Projet inutile avec P5.js : gare à la crise d'épilepsie.</p>
-            <div class="demos__proj__bloc__illubloc">
-              <img class="demos__proj__bloc__illubloc--img" src="./images/code/epil2.png" />
-              <img class="demos__proj__bloc__illubloc--img" src="./images/code/epil1.png" />
-              <img class="demos__proj__bloc__illubloc--img" src="./images/code/epil3.png" />
-            </div>
+          <div class="demos__proj__bloc__illubloc">
+            <img class="demos__proj__bloc__illubloc--img" src="./images/code/epil2.png" />
+            <img class="demos__proj__bloc__illubloc--img" src="./images/code/epil1.png" />
+            <img class="demos__proj__bloc__illubloc--img" src="./images/code/epil3.png" />
           </div>
         </div>
-
       </div>
 
+    </div>
 
-      <script src="./scripts/change-img.js" type="text/javascript"></script>
-      <script src="./scripts/yeuzanim.js" type="text/javascript"></script>
+
+    <script src="./scripts/change-img.js" type="text/javascript"></script>
+    <script src="./scripts/yeuzanim.js" type="text/javascript"></script>
 
 
 
@@ -94,4 +123,4 @@
 
 
 
-</html>
+  </html>
