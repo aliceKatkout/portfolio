@@ -31,6 +31,8 @@ start.addEventListener("mouseover", function(event) {
   animate1();
 });
 
+//BARBA
+
 const wipe = document.querySelector('.wipe-transition');
 //const allBandes = document.querySelectorAll('.bande');
 const TLAnim = new TimelineMax();
