@@ -11,6 +11,7 @@
   font-style: normal;
 }
 a:link, a:visited {
+  color: #708090;
   text-decoration: none;
 }
 

@@ -17,12 +17,12 @@
 }
 
 $font-stack: source-sans-pro, Helvetica, sans-serif;
-$primary-color: #333;
-$name-color: #fff;
+$primary-color: #708090;
+$name-color: #708090;
 
 
 a:link, a:visited{
-
+  color: $primary-color;
   text-decoration: none;
 
 }
@@ -44,6 +44,7 @@ a:link, a:visited{
     }
   }
   &__nav{
+
     display: flex;
     flex:auto;
     &--ul {

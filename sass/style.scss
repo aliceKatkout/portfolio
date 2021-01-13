@@ -20,8 +20,8 @@
 
 
 $font-stack: source-sans-pro, Helvetica, sans-serif;
-$primary-color: #333;
-$name-color: #fff;
+$primary-color: #708090;
+$name-color: #708090;
 
 
 *{
@@ -36,7 +36,7 @@ body {
 
 //INDEX
 #special-body-accueil {
-  color:$primary-color;
+  color: white;
   margin: 0px;
   padding: 0px;
   overflow: hidden;
@@ -98,7 +98,7 @@ body {
     transform: rotate(180deg);
     margin-left: 2%;
     background-color: #000000;
-    color : $name-color;
+    color : white;
     font-size: 3em;
     margin: 5px;
     max-width: 110px;
